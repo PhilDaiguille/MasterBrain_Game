@@ -81,7 +81,6 @@ document.addEventListener("DOMContentLoaded", () => {
         }).format(chercher);
         couleur(chercher);
     }
-    console.table(t);
 
     let verif = X => {
         if (X === "rouge") {
