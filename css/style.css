@@ -130,8 +130,6 @@ input {
     font-weight: 500;
 }
 
-main .appear section {}
-
 select {
     margin: 1rem auto;
     border: solid .1rem #000;
@@ -244,7 +242,8 @@ body .begin {
     margin: 1rem auto;
 }
 
-.begin figure input[type="button"] {
+.begin figure input[type="button"],
+main .gagné input[type="button"] {
     padding: 1rem 2rem;
     display: block;
     margin: 1rem auto;

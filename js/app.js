@@ -94,6 +94,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 <li style="background-color:${verif(t[2])}">${t[2]}</li>
                 <li style="background-color:${verif(t[3])}">${t[3]}</li>
             </ul>
+            <input type="button" value="Recommencer">
 			</section>
 			`;
         }
