@@ -1,10 +1,45 @@
 document.addEventListener("DOMContentLoaded", () => {
     let t = [];
     let tentative = 0;
+    /*----------Commencer----------- */
+    begin = document.querySelector(".begin");
+
+    window.addEventListener("load", () => {
+        begin.innerHTML += `<figure>
+        <h2>Règles</h2>
+        <figcaption>
+            <ul>
+                <li>
+                    Le but du jeu est de deviner une combinaison de couleurs choisie par le programme. Vous devez deviner la combinaison et vous devez faire des propositions en sélectionnant une combinaison de couleurs. Le programme qui a choisi
+                    aléatoirement la combinaison indique pour chaque couleur de la proposition si elle est :
+                </li>
+                <li>
+                     - bien placée (c'est-à-dire si elle fait partie de la combinaison et est à la bonne position) présente dans la combinaison (mais mal placée)
+
+                </li>
+                <li>
+                    Vous devez deviner la combinaison doit utiliser ces indications pour faire de nouvelles propositions et essayer de deviner la combinaison en un minimum de coups.
+
+                </li>
+                <li>
+                    Le jeu se termine lorsque vous avez trouvé la combinaison correctement.
+
+                </li>
+            </ul>
+        </figcaption>
+        <input type="button" value="Commencez à jouer">
+    </figure>`;
+
+        btn2 = document.querySelector(".begin > figure:nth-child(1) > input:nth-child(3)");
+        btn2.addEventListener("click", () => {
+            begin.innerHTML = "";
+            begin.style.display = "none";
+        });
+    });
 
     /*-------FORM----------*/
 
-    let btn, R, V, B, J, appear, bon, mauvais, réponse;
+    let btn, R, V, B, J, appear, réponse;
     réponse = document.querySelector("main .rep");
     btn = document.querySelector("body > main > section:nth-child(2) > form > fieldset > input[type=submit]");
     appear = document.querySelector(".appear");
