@@ -97,8 +97,13 @@ document.addEventListener("DOMContentLoaded", () => {
             <input type="button" value="Recommencer">
 			</section>
 			`;
+            let btn3 = document.querySelector(".gagné > input:nth-child(3)");
+            btn3.addEventListener("click", () => {
+                window.location.reload();
+            });
         }
     };
+
     let couleur = X => {
         if (X == 0) {
             t.push("rouge");
